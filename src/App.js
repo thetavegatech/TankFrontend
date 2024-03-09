@@ -68,7 +68,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5002/api/mqtt-s1');
+        const response = await axios.get('https://tankbackend.onrender.com/api/mqtt-s1');
         console.log(response.data);
         setMqttData(response.data.s1Value);
       } catch (error) {
